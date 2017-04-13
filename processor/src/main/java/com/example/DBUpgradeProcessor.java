@@ -39,6 +39,7 @@ public class DBUpgradeProcessor extends AbstractProcessor {
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
         try
         {
+            String packageName = null;
             for (Element annotatedElement : roundEnvironment.getElementsAnnotatedWith(DBUpgrade.class)) {
                 boolean validClass = AnnotationChecker.properElementAnnotated(annotatedElement, elementUtils, typeUtils);
                 if (!validClass)
@@ -47,7 +48,15 @@ public class DBUpgradeProcessor extends AbstractProcessor {
                             SQLiteUpgrade.class.getSimpleName(), DBUpgrade.class.getSimpleName());
                 }
 
+                TypeElement classElement = (TypeElement)annotatedElement;
+                DbUpgradeContainer upgradeContainer = DbUpgradeFactory.fromElement(classElement);
+                containers.add(upgradeContainer);
+                packageName = elementUtils.getPackageOf(classElement).getQualifiedName().toString();
+            }
 
+            if (packageName != null) {
+                DBUpgradeCacheWriter.build(containers, messager, processingEnv, packageName);
+                SQLiteUpgradeHelperWriter.build(processingEnv, packageName);
             }
         }
         catch (ProcessingException e) {

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DbTestApplication.iml" filepath="$PROJECT_DIR$/DbTestApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Database-Upgrade-Annotation-Processor.iml" filepath="$PROJECT_DIR$/Database-Upgrade-Annotation-Processor.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLiteUpgradeHelper/SQLiteUpgradeHelper.iml" filepath="$PROJECT_DIR$/SQLiteUpgradeHelper/SQLiteUpgradeHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/processor/processor.iml" filepath="$PROJECT_DIR$/processor/processor.iml" />
     </modules>
   </component>
