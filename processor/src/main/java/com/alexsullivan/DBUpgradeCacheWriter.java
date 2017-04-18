@@ -1,4 +1,4 @@
-package com.example;
+package com.alexsullivan;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
@@ -10,12 +10,10 @@ import com.squareup.javapoet.TypeSpec;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 
 import javax.annotation.processing.FilerException;
 import javax.annotation.processing.Messager;

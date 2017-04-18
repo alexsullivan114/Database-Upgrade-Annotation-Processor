@@ -1,4 +1,4 @@
-package com.example.alexscomputerminedonttouch.dbtestapplication;
+package com.alexsullivan.example.dbtestapplication;
 
 import org.junit.Test;
 

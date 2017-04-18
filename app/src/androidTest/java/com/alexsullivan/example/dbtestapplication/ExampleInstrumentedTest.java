@@ -1,4 +1,4 @@
-package com.example.alexscomputerminedonttouch.dbtestapplication;
+package com.alexsullivan.example.dbtestapplication;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

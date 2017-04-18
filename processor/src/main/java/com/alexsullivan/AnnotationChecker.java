@@ -1,4 +1,4 @@
-package com.example;
+package com.alexsullivan;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ class AnnotationChecker {
     static boolean properElementAnnotated(Element annotatedElement,
                                           Elements elementUtils,
                                           Types typeUtils) {
-        TypeMirror upgrade = elementUtils.getTypeElement("com.example.SQLiteUpgrade").asType();
+        TypeMirror upgrade = elementUtils.getTypeElement("com.alexsullivan.SQLiteUpgrade").asType();
         boolean correctInterface = typeUtils.isAssignable(annotatedElement.asType(), upgrade);
         // Just make this public for now.
         boolean correctModifiers = annotatedElement.getModifiers().contains(Modifier.PUBLIC);

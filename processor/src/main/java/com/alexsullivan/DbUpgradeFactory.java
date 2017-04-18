@@ -1,7 +1,5 @@
-package com.example;
+package com.alexsullivan;
 
-import javax.lang.model.element.Element;
-import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.element.TypeElement;
 
 public class DbUpgradeFactory {

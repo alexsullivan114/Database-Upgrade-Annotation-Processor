@@ -1,4 +1,4 @@
-package com.example.utils;
+package com.alexsullivan.utils;
 
 import java.io.IOException;
 import java.util.List;

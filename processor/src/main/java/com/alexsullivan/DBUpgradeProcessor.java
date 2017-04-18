@@ -1,4 +1,4 @@
-package com.example;
+package com.alexsullivan;
 
 import com.google.auto.service.AutoService;
 
@@ -74,7 +74,7 @@ public class DBUpgradeProcessor extends AbstractProcessor {
     @Override
     public Set<String> getSupportedAnnotationTypes() {
         Set<String> set = new HashSet<>();
-        set.add("com.example.DBUpgrade");
+        set.add("com.alexsullivan.DBUpgrade");
         return set;
     }
 

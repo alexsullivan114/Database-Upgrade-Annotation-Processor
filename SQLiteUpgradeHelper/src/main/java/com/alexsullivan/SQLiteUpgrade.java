@@ -1,4 +1,4 @@
-package com.example;
+package com.alexsullivan;
 
 public interface SQLiteUpgrade {
     String upgradeScript();

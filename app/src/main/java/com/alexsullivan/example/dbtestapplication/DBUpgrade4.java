@@ -1,7 +1,7 @@
-package com.example.alexscomputerminedonttouch.dbtestapplication;
+package com.alexsullivan.example.dbtestapplication;
 
-import com.example.DBUpgrade;
-import com.example.SQLiteUpgrade;
+import com.alexsullivan.DBUpgrade;
+import com.alexsullivan.SQLiteUpgrade;
 
 /**
  * Created by Alexs on 4/13/2017.

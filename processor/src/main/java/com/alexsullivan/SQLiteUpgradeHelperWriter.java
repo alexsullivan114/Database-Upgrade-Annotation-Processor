@@ -1,4 +1,4 @@
-package com.example;
+package com.alexsullivan;
 
 import com.google.common.reflect.TypeToken;
 import com.squareup.javapoet.FieldSpec;
@@ -8,7 +8,6 @@ import com.squareup.javapoet.TypeName;
 import com.squareup.javapoet.TypeSpec;
 
 import java.io.IOException;
-import java.io.Writer;
 import java.lang.reflect.Type;
 import java.util.HashMap;
 
@@ -16,7 +15,6 @@ import javax.annotation.processing.FilerException;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.lang.model.element.Modifier;
 import javax.tools.Diagnostic;
-import javax.tools.JavaFileObject;
 
 import static com.squareup.javapoet.ClassName.get;
 

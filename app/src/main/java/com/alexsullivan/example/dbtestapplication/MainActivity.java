@@ -1,4 +1,4 @@
-package com.example.alexscomputerminedonttouch.dbtestapplication;
+package com.alexsullivan.example.dbtestapplication;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
