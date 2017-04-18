@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Database-Upgrade-Annotation-Processor.iml" filepath="$PROJECT_DIR$/Database-Upgrade-Annotation-Processor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SQLiteUpgradeHelper/SQLiteUpgradeHelper.iml" filepath="$PROJECT_DIR$/SQLiteUpgradeHelper/SQLiteUpgradeHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/processor/processor.iml" filepath="$PROJECT_DIR$/processor/processor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqlite-upgrade-helper-api/sqlite-upgrade-helper-api.iml" filepath="$PROJECT_DIR$/sqlite-upgrade-helper-api/sqlite-upgrade-helper-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqlite-upgrade-helper-processor/sqlite-upgrade-helper-processor.iml" filepath="$PROJECT_DIR$/sqlite-upgrade-helper-processor/sqlite-upgrade-helper-processor.iml" />
     </modules>
   </component>
 </project>

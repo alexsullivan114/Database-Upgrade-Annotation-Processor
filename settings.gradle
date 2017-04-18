@@ -1,1 +1,1 @@
-include ':app', ':SQLiteUpgradeHelper', ':processor'
+include ':app', ':sqlite-upgrade-helper-api', ':sqlite-upgrade-helper-processor'
