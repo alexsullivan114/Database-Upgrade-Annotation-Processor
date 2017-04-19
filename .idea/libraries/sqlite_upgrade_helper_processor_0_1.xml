@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sqlite-upgrade-helper-processor-0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alexsullivan/sqlite-upgrade-helper-processor/0.1/18cebdc1ce05a0512240c8b59518146042a3a3d6/sqlite-upgrade-helper-processor-0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alexsullivan/sqlite-upgrade-helper-processor/0.1/5ff35057e5feaa7dbe53ad582fab39b28a91c0e6/sqlite-upgrade-helper-processor-0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

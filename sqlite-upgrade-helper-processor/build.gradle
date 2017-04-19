@@ -1,4 +1,39 @@
+apply plugin: "com.jfrog.bintray"
 apply plugin: 'java'
+apply plugin: "maven-publish"
+
+publishing {
+    publications {
+        MyPublication(MavenPublication) {
+            from components.java
+            artifact sourcesJar
+            groupId 'com.alexsullivan'
+            artifactId 'sqlite-upgrade-helper-processor'
+            version '0.1'
+        }
+    }
+}
+
+// custom tasks for creating source/javadoc jars
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+bintray {
+    user = 'alexsullivan114'
+    key = '774b3bde3a1d9a68493ff4befc2e8fe4593bf845'
+    publications = ['MyPublication']
+    pkg {
+        repo = 'SQLiteUpgradeHelper'
+        name = 'sqlite-upgrade-helper-processor'
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/alexsullivan114/Database-Upgrade-Annotation-Processor.git'
+        version {
+            name = '0.1'
+        }
+    }
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
