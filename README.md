@@ -11,3 +11,20 @@ Annotation processor and sample app for doing easy database upgrades.
 ## TODO ##
 
 * Create DBUpgradeContainer annotation to facilitate the user of a single class containing multiple DB upgrades.
+
+# DOWNLOAD #
+
+Add ```jcenter()``` to your repositories:
+```
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+```
+
+Then add both the compiler and the api depedencies:
+```
+compile 'com.alexsullivan:sqlite-upgrade-helper-api:0.1'
+annotationProcessor 'com.alexsullivan:sqlite-upgrade-helper-processor:0.1'
+```
