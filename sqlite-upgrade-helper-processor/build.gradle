@@ -21,8 +21,8 @@ task sourcesJar(type: Jar, dependsOn: classes) {
 }
 
 bintray {
-    user = 'alexsullivan114'
-    key = '774b3bde3a1d9a68493ff4befc2e8fe4593bf845'
+    user = 'USERNAME'
+    key = 'PASSWORD'
     publications = ['MyPublication']
     pkg {
         repo = 'SQLiteUpgradeHelper'
