@@ -39,12 +39,14 @@ public class DBUpgradeProcessor extends AbstractProcessor {
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
         try
         {
+            AnnotationChecker annotationChecker = new AnnotationChecker(elementUtils, typeUtils, messager);
             String packageName = null;
             for (Element annotatedElement : roundEnvironment.getElementsAnnotatedWith(DBUpgrade.class)) {
-                boolean validClass = AnnotationChecker.properElementAnnotated(annotatedElement, elementUtils, typeUtils);
-                if (!validClass)
+                AnnotationChecker.Result validClass = annotationChecker.isProperDbUpgrade(annotatedElement);
+                if (validClass != AnnotationChecker.Result.SUCCESS)
                 {
-                    throw new ProcessingException(annotatedElement, "Only classes that implement %s and have a zero-arg constructor can be annotated with @%s",
+                    // TODO: Make this legit error message
+                    throw new ProcessingException(annotatedElement, validClass.message,
                             SQLiteUpgrade.class.getSimpleName(), DBUpgrade.class.getSimpleName());
                 }
 
